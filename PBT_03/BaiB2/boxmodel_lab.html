@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Lab</title>
+    <link rel="stylesheet" href="boxmodel.css">
+</head>
+<body>
+    <h1>Box Model Lab</h1>
+    <div class="container">
+        <div class="box content-box">
+            <h2>Content-Box</h2>
+            <p>width: 300px</p>
+            <p>padding: 20px</p>
+            <p>border: 5px</p>
+        </div>
+
+        <div class="box border-box">
+            <h2>Border-Box</h2>
+            <p>width: 300px</p>
+            <p>padding: 20px</p>
+            <p>border: 5px</p>
+        </div>
+    </div>
+    <div class="result">
+        <h3>Kết quả mong đợi:</h3>
+        <p>Content-box: 350px</p>
+        <p>Border-box: 300px</p>
+    </div>
+
+    <h2>Layout 3 cột - Không dùng border-box</h2>
+
+    <div class="layout-no-box">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="ads">Ads</div>
+    </div>
+
+    <h2>Layout 3 cột - Có dùng border-box</h2>
+
+    <div class="layout-border-box">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="ads">Ads</div>
+    </div>
+</body>
+</html>
