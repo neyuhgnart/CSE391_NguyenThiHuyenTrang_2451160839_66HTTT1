@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: #f8fafc;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* ===== PHẦN 1 ===== */
+
+.container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.box {
+    padding: 20px;
+    border: 5px solid black;
+    text-align: center;
+}
+
+.content-box {
+    width: 300px;
+    box-sizing: content-box;
+    background: #dbeafe;
+}
+
+.border-box {
+    width: 300px;
+    box-sizing: border-box;
+    background: #dcfce7;
+}
+
+.result {
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+/* ===== PHẦN 2 ===== */
+
+.layout-no-box,
+.layout-border-box {
+    width: 1000px;
+    margin: 30px auto;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+/* Không border-box */
+.layout-no-box .sidebar,
+.layout-no-box .content,
+.layout-no-box .ads {
+    float: left;
+    box-sizing: content-box;
+    border: 1px solid black;
+}
+
+.layout-no-box .sidebar,
+.layout-no-box .ads {
+    width: 250px;
+    padding: 15px;
+    background: #dbeafe;
+}
+
+.layout-no-box .content {
+    width: 500px;
+    padding: 20px;
+    background: #fde68a;
+}
+
+
+/* Có border-box */
+.layout-border-box .sidebar,
+.layout-border-box .content,
+.layout-border-box .ads {
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.layout-border-box .sidebar,
+.layout-border-box .ads {
+    width: 250px;
+    padding: 15px;
+    background: #bbf7d0;
+}
+
+.layout-border-box .content {
+    width: 500px;
+    padding: 20px;
+    background: #86efac;
+}
+
+.sidebar,
+.content,
+.ads {
+    min-height: 120px;
+    text-align: center;
+    font-weight: bold;
+}

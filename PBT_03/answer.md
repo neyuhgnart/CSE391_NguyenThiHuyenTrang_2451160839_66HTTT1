@@ -143,6 +143,87 @@ Element sẽ có màu đen (black)
 Vì: !important ưu tiên cao hơn specificity thông thường
 
 
+### Bài B2 — Box Model Lab
+Hộp 1 (content-box): chiều rộng thực tế = 300 px (đo từ DevTools)
+Hộp 2 (border-box): chiều rộng thực tế = 300 px (đo từ DevTools)
+Giải thích sự khác biệt: mặc dù DevTools hiển thị cả hai đều là 300px, nhưng ý nghĩa khác nhau:
+- Với content-box, 300px là chiều rộng của phần content, chưa tính padding và border.
+Chiều rộng hiển thị thực tế trên trang là: 300 + 20×2 + 5×2 = 350px
+- Với border-box, 300px là chiều rộng toàn bộ hộp, đã bao gồm content, padding và border. Vì vậy kích thước hiển thị thực tế vẫn là 300px
+Do đó hộp content-box nhìn lớn hơn hộp border-box, dù DevTools đều hiển thị width là 300px
+
+
+### Bài B3 — Specificity Battle
+1. Liệt kê 10 rules + specificity score
+
+| Rule | Selector            | Specificity |
+|------|---------------------|-------------|
+| 1    | p                   | (0,0,1)     |
+| 2    | .text               | (0,1,0)     |
+| 3    | .highlight          | (0,1,0)     |
+| 4    | body p              | (0,0,2)     |
+| 5    | p.text              | (0,1,1)     |
+| 6    | .text.highlight     | (0,2,0)     |
+| 7    | p.text.highlight    | (0,2,1)     |
+| 8    | #demo               | (1,0,0)     |
+| 9    | p#demo              | (1,0,1)     |
+| 10   | #demo.text.highlight| (1,2,0)     |
+
+2. Element cuối cùng hiển thị màu gì? Tại sao?
+Element cuối cùng hiển thị màu: gold
+Vì: ```#demo.text.highlight``` có specificity cao nhất: (1,2,0)
+CSS ưu tiên selector có specificity lớn hơn, nên rule này ghi đè tất cả rule còn lại
+
+4. Thay đổi thứ tự rules trong CSS file. Kết quả không thay đổi. Vì:
+Rule thắng có độ ưu tiên (specificity) cao nhất nên vẫn được áp dụng dù đặt ở đâu.
+Thứ tự viết CSS chỉ quan trọng khi 2 rule có cùng specificity. Khi đó rule viết sau sẽ thắng
+
+
+## PHẦN C — DEBUG & SUY LUẬN 
+### Câu C1 — Debug CSS Layout
+1. Tính chiều rộng **thực tế** của sidebar và content (content-box!)
+Sidebar= width + padding×2 + border×2 = 300 + (20×2) + (1×2)= 342px
+Content=660 + (30×2) + (1×2)= 722px
+
+2. Giải thích tại sao layout bị vỡ
+Vì: Tổng=342 + 722 = 1064px mà Container chỉ:960px
+1064 > 960 nên browser không đủ chỗ đặt cạnh nhau => content bị đẩy xuống dòng
+
+3. Đưa ra **2 cách sửa** khác nhau (1 cách dùng border-box, 1 cách không dùng)
+C1: dùng border-box:
+*{
+    box-sizing: border-box;
+}
+C2: không dùng border-box:
+.sidebar {
+    width: 258px;
+}
+.content {
+    width: 598px;
+}
+
+### Câu C2 — Cascade Puzzle
+1. "Sản phẩm A" (h2) có `font-size` = 20px và `color` = green
+Giải thích:
+- h2 kế thừa font-size từ .container (14px), nhưng bị rule .card .title ghi đè thành 20px
+- Về color, h2 nhận màu đỏ từ #featured .title, nhưng class .highlight có !important nên ghi đè và cho màu green
+
+2. "Mô tả sản phẩm" (p trong card featured) có `color` = blue
+Giải thích:
+Thẻ <p> dùng color: inherit, nên kế thừa màu từ phần tử cha .card mà .card có màu blue, nên p hiển thị màu blue
+
+3. "Sản phẩm B" (h2) có `font-size` = 20px và `color` = blue
+Giải thích:
+Rule .card .title đặt trực tiếp font-size 20px nên ghi đè giá trị kế thừa. 
+Do không có class .highlight và không nằm trong #featured, nên h2 kế thừa màu từ .card là blue
+
+4. "Mô tả sản phẩm B" (p.highlight) có `color` = green
+Giải thích:
+Thẻ p ban đầu kế thừa màu blue từ .card
+Tuy nhiên nó có class .highlight, và rule .highlight có !important nên ghi đè tất cả và thành màu green
+
+
+
 
 
 

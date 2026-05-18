@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Descendant selector */
+header h1 {
+    margin: 0;
+}
+
+/* Element selector */
+header {
+    background: linear-gradient(to right, #2563eb, #1e40af);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav a {
+    text-decoration: none;
+    color: #dbeafe;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Pseudo-class selector */
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Class selector */
+.active {
+    color: #facc15;
+    border-bottom: 2px solid #facc15;
+}
+
+/* ID selector */
+#profile {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1e293b;
+    color: white;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* Hover row */
+tr:hover {
+    background-color: #dbeafe;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

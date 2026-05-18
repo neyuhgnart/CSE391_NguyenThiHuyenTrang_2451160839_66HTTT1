@@ -1,0 +1,58 @@
+/* 1. Element selector */
+p {
+    color: black;
+} /* Specificity: (0,0,1) */
+
+
+/* 2. Class selector */
+.text {
+    color: blue;
+} /* Specificity: (0,1,0) */
+
+
+/* 3. Another class selector */
+.highlight {
+    color: green;
+} /* Specificity: (0,1,0) */
+
+
+/* 4. Two element selectors */
+body p {
+    color: purple;
+} /* Specificity: (0,0,2) */
+
+
+/* 5. Element + class */
+p.text {
+    color: orange;
+} /* Specificity: (0,1,1) */
+
+
+/* 6. Two classes */
+.text.highlight {
+    color: brown;
+} /* Specificity: (0,2,0) */
+
+
+/* 7. Element + two classes */
+p.text.highlight {
+    color: pink;
+} /* Specificity: (0,2,1) */
+
+
+/* 8. ID selector */
+#demo {
+    color: red;
+} /* Specificity: (1,0,0) */
+
+
+/* 9. ID + element */
+p#demo {
+    color: teal;
+} /* Specificity: (1,0,1) */
+
+
+/* 10. ID + two classes */
+#demo.text.highlight {
+    color: gold;
+} /* Specificity: (1,2,0) */
