@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đặt Hàng</title>
+</head>
+<body>
+    <h1>Thanh Toán Đơn Hàng</h1>
+    <form action="#" method="POST">
+        <!-- Phần 1 -->
+        <section>
+            <h2>Giỏ hàng</h2>
+            <label for="search">Tìm sản phẩm:</label>
+            <input type="text" id="search" list="products" placeholder="Nhập tên sản phẩm">
+            <datalist id="products">
+                <option value="iPhone 16 Pro Max">
+                <option value="MacBook Air M4">
+                <option value="Apple Watch Series 11">
+            </datalist>
+            <table style="border: 1px solid black; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>iPhone 16 Pro Max</td>
+                        <td>29.990.000đ</td>
+                        <td>1</td>
+                        <td>29.990.000đ</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MacBook Air M4</td>
+                        <td>25.000.000đ</td>
+                        <td>1</td>
+                        <td>25.000.000đ</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Apple Watch</td>
+                        <td>10.000.000đ</td>
+                        <td>1</td>
+                        <td>10.000.000đ</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong>Tổng cộng</strong></td>
+                        <td><output>64.990.000đ</output></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!-- Phần 2 -->
+        <section>
+            <h2>Thanh toán</h2>
+            <p>Phương thức thanh toán:</p>
+            <input type="radio" id="cod" name="payment" required>
+            <label for="cod">COD</label>
+            <input type="radio" id="bank" name="payment">
+            <label for="bank">Chuyển khoản</label>
+            <input type="radio" id="wallet" name="payment">
+            <label for="wallet">Ví điện tử</label>
+            <p>
+                <label for="coupon">Mã giảm giá:</label>
+                <input type="text"
+                       id="coupon"
+                       name="coupon"
+                       placeholder="SALE2026"
+                       pattern="SALE[0-9]{4}">
+            </p>
+            <p>
+                <label for="note">Ghi chú:</label>
+                <textarea id="note" name="note" rows="3"
+                          placeholder="Ghi chú đơn hàng"></textarea>
+            </p>
+        </section>
+        <!-- Phần 3 -->
+        <section>
+            <h2>Thông tin giao hàng</h2>
+            <p>
+                <label for="delivery-date">Ngày giao hàng:</label>
+                <input type="date"
+                       id="delivery-date"
+                       name="delivery-date"
+                       min="2026-05-05"
+                       required>
+            </p>
+            <p>
+                <label for="time-slot">Khung giờ:</label>
+                <select id="time-slot" name="time-slot" required>
+                    <option value="">Chọn khung giờ</option>
+                    <option>Sáng 8-12h</option>
+                    <option>Chiều 13-17h</option>
+                    <option>Tối 18-21h</option>
+                </select>
+            </p>
+            <p>
+                <label for="delivery-speed">Thời gian giao (ngày):</label>
+                <input type="range"
+                       id="delivery-speed"
+                       name="delivery-speed"
+                       min="1"
+                       max="7"
+                       step="1">
+            </p>
+        </section>
+        <!-- Bonus -->
+        <section>
+            <h2>Điểm tích lũy</h2>
+            <label for="points">Tiến độ tích điểm:</label>
+            <progress id="points" value="70" max="100"></progress>
+        </section>
+        <button type="submit" aria-label="Xác nhận đặt hàng">
+            Xác nhận đặt hàng
+        </button>
+        <button type="reset">Làm lại</button>
+    </form>
+</body>
+</html>

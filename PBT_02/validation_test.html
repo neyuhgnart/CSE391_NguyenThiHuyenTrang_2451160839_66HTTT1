@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Test</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .box { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+<h2>HTML Form Validation Test</h2>
+<form>
+    <!-- Trường hợp 1 -->
+    <div class="box">
+        <label>Case 1: required text</label>
+        <input type="text" required value="">
+    </div>
+
+    <!-- Trường hợp 2 -->
+    <div class="box">
+        <label>Case 2: email format</label>
+        <input type="email" value="abc">
+    </div>
+
+    <!-- Trường hợp 3 -->
+    <div class="box">
+        <label>Case 3: number 1-10 (value = 15)</label>
+        <input type="number" min="1" max="10" value="15">
+    </div>
+
+    <!-- Trường hợp 4 -->
+    <div class="box">
+        <label>Case 4: pattern 10 digits</label>
+        <input type="text" pattern="[0-9]{10}" value="abc123">
+    </div>
+
+    <!-- Trường hợp 5 -->
+    <div class="box">
+        <label>Case 5: password minlength 8</label>
+        <input type="password" minlength="8" value="123">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

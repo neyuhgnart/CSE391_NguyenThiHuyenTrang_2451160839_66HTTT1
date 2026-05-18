@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Sản Phẩm</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        article {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Shop Online</h1>
+    <nav>
+        <a href="profile.html">Profile</a>
+        <a href="products.html">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<!-- SẢN PHẨM -->
+<section>
+    <h2 style="padding-left:20px;">Sản phẩm nổi bật</h2>
+    <div class="products">
+        <article>
+            <figure>
+                <img src="https://placehold.co/300x200" alt="áo thun">
+            </figure>
+            <h3>Áo thun</h3>
+            <p>Áo thun cotton 100%</p>
+            <p><mark>150.000đ</mark></p>
+            <a href="#">Mua ngay</a>
+        </article>
+        <article>
+            <figure>
+                <img src="https://placehold.co/300x200" alt="quần jeans">
+            </figure>
+            <h3>Quần jeans</h3>
+            <p>Quần jeans thời trang</p>
+            <p><strong>200.000</strong></p>
+            <a href="#">Mua ngay</a>
+        </article>
+        <article>
+            <figure>
+                <img src="https://placehold.co/300x200" alt="giày thể thao">
+            </figure>
+            <h3>Giày sneaker</h3>
+            <p>Giày thể thao nam/nữ</p>
+            <p><mark>500.000đ</mark></p>
+            <a href="#">Mua ngay</a>
+        </article>
+        <article>
+            <figure>
+                <img src="https://placehold.co/300x200" alt="balo">
+            </figure>
+            <h3>Balo</h3>
+            <p>Balo học sinh</p>
+            <p><strong>250.000đ</strong></p>
+            <a href="#">Mua ngay</a>
+        </article>
+    </div>
+</section>
+<!-- BẢNG SO SÁNH -->
+<section>
+    <h2 style="padding-left:20px;">Bảng so sánh sản phẩm</h2>
+    <table>
+        <tr>
+            <th rowspan="2">Tiêu chí</th>
+            <th colspan="3">Sản phẩm</th>
+        </tr>
+        <tr>
+            <th>Áo thun</th>
+            <th>Quần jeans</th>
+            <th>Giày</th>
+        </tr>
+        <tr>
+            <td>Giá</td>
+            <td>150k</td>
+            <td>200k</td>
+            <td>500k</td>
+        </tr>
+        <tr>
+            <td>Chất liệu</td>
+            <td>Cotton</td>
+            <td>Denim</td>
+            <td>Da + vải</td>
+        </tr>
+        <tr>
+            <td>Bảo hành</td>
+            <td>3 tháng</td>
+            <td>3 tháng</td>
+            <td>6 tháng</td>
+        </tr>
+    </table>
+</section>
+<!-- FOOTER -->
+<footer>
+    <p>
+        <a href="#">Chính sách</a> |
+        <a href="#">Liên hệ</a> |
+        <a href="#">FAQ</a>
+    </p>
+</footer>
+</body>
+</html>
