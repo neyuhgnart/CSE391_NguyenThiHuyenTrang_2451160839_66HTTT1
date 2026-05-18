@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 20px auto;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+/* == C1 ==*/
+
+.fix1 * {
+    box-sizing: border-box;
+}
+
+.fix1 .sidebar {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #dbeafe;
+}
+
+.fix1 .content {
+    width: 660px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #dcfce7;
+}
+
+
+/* == C2 == */
+
+.fix2 .sidebar {
+    width: 258px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fde68a;
+}
+
+.fix2 .content {
+    width: 598px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fca5a5;
+}
