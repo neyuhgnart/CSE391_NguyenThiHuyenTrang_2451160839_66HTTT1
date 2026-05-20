@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ E-Commerce - CSS Grid Layout</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">E-ShopGrid</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm công nghệ...">
+            </div>
+            <div class="user-actions">
+                <span>Giỏ hàng (0)</span>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Tuần Lễ Công Nghệ Bùng Nổ</h2>
+                <p>Săn ngay các thiết bị đỉnh cao với ưu đãi lên tới 50% từ các thương hiệu lớn.</p>
+                <button class="btn-hero">Xem Ngay</button>
+            </div>
+            
+            <div class="featured-card">
+                <span class="featured-badge">Nổi Bật</span>
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&auto=format&fit=crop&q=80" alt="Laptop Gaming" class="featured-img">
+                <div class="featured-info">
+                    <h3>Siêu Phẩm ROG Strix G16 Ultra</h3>
+                    <p class="featured-desc">Intel Core i9 thế hệ mới, RTX 4070, Màn hình 2K 240Hz siêu mượt.</p>
+                    <p class="featured-price">42.500.000 đ</p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Bộ Lọc Tìm Kiếm</h3>
+            
+            <div class="filter-group">
+                <h4>Danh Mục</h4>
+                <label><input type="checkbox" checked> Laptop Gaming</label>
+                <label><input type="checkbox"> Linh Kiện PC</label>
+                <label><input type="checkbox"> Chuột & Bàn Phím</label>
+                <label><input type="checkbox"> Tai Nghe Cao Cấp</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Khoảng Giá</h4>
+                <label><input type="checkbox"> Dưới 5 triệu</label>
+                <label><input type="checkbox"> 5 triệu - 15 triệu</label>
+                <label><input type="checkbox"> 15 triệu - 30 triệu</label>
+                <label><input type="checkbox" checked> Trên 30 triệu</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Thương Hiệu</h4>
+                <label><input type="checkbox"> ASUS ROG</label>
+                <label><input type="checkbox"> Razer</label>
+                <label><input type="checkbox"> Logitech</label>
+                <label><input type="checkbox"> Corsair</label>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=80" alt="Sản phẩm Smartwatch" class="card-img">
+                <h4>Đồng Hồ Thông Minh Smartwatch S4</h4>
+                <p class="price">4.500.000 đ</p>
+                <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=80" alt="Sản phẩm Tai Nghe" class="card-img">
+                <h4>Tai Nghe Studio Over-Ear Wireless</h4>
+                <p class="price">2.990.000 đ</p>
+                <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500&auto=format&fit=crop&q=80" alt="Sản phẩm Bàn Phím" class="card-img">
+                <h4>Bàn Phím Cơ Custom MonsGeek M1</h4>
+                <p class="price">2.450.000 đ</p>
+                <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=80" alt="Sản phẩm Giày" class="card-img">
+                <h4>Giày Thể Thao Sneaker Air Pro X</h4>
+                <p class="price">950.000 đ</p>
+                <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&auto=format&fit=crop&q=80" alt="Sản phẩm Tai nghe Gaming" class="card-img">
+                <h4>Tai Nghe Gaming Esport RGB Pro</h4>
+                <p class="price">1.850.000 đ</p>
+                <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&auto=format&fit=crop&q=80" alt="Sản phẩm Loa Bluetooth" class="card-img">
+                <h4>Loa Bluetooth Di Động BassBoost II</h4>
+                <p class="price">3.200.000 đ</p>
+                <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
+        </main>
+
+        <aside class="ads">
+            <div class="ads-banner">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&auto=format&fit=crop&q=80" alt="Balo chống nước" class="ads-img">
+                <div class="ads-overlay">
+                    <span>HOT DEAL</span>
+                    <h5>Balo TechPack Giảm 30%</h5>
+                </div>
+            </div>
+            <div class="ads-text-banner">
+                <p>⚡ Nhập mã <strong>GRID5</strong> giảm ngay 50k cho đơn hàng đầu tiên áp dụng tuần này!</p>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <p>&copy; 2026 E-ShopGrid System.</p>
+        </footer>
+    </div>
+</body>
+</html>

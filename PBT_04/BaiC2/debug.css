@@ -1,0 +1,23 @@
+.card-container{ display: flex; flex-wrap: wrap;}
+.card{ width: 30%; margin: 1.5%; display: flex; flex-direction: column;}
+.card img{ width: 100%;}
+.card h3{font-size: 18px;}
+.card .btn{padding: 10px; margin-top: auto;}
+
+.hero {
+    height: 100vh;
+    display: flex;
+}
+.hero-content {
+    text-align: center;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    text-align: center;
+}
