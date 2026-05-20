@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập CSS Positioning</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DevShop.vn</div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <h3>Danh Mục Sản Phẩm</h3>
+            <ul>
+                <li><a href="#" style="color:#2563eb; font-weight:bold;">» Laptop Gaming</a></li>
+                <li><a href="#">» Linh kiện PC</a></li>
+                <li><a href="#">» Màn hình đồ họa</a></li>
+                <li><a href="#">» Bàn phím cơ</a></li>
+                <li><a href="#">» Chuột công thái học</a></li>
+                <li><a href="#">» Tai nghe Gaming</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h2 class="section-title">Sản Phẩm Mới Nhất</h2>
+            
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="badge-hot">Hot</div>
+                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&auto=format&fit=crop&q=80" alt="Asus ROG Strix G16" class="product-img">
+                        <h4>Asus ROG Strix G16 (2026)</h4>
+                        <div class="price">38.990.000 đ</div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="badge-hot">Hot</div>
+                        <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500&auto=format&fit=crop&q=80" alt="Bàn phím Akko MonsGeek M1" class="product-img">
+                        <h4>Bàn phím Akko MonsGeek M1</h4>
+                        <div class="price">2.450.000 đ</div>
+                    </div>
+                </div>
+
+            <div class="dummy-scroll-content" style="height: 400px; background:#f1f5f9; margin-top:20px; text-align:center; padding-top:50px; border:1px dashed #cbd5e1;">
+            </div>
+            <div class="dummy-scroll-content" style="height: 400px; background:#f1f5f9; margin-top:20px; text-align:center; padding-top:50px; border:1px dashed #cbd5e1;">
+            </div>
+        </main>
+    </div>
+    <a href="#" class="scroll-top-btn" title="Lên trên cùng">↑</a>
+</body>
+</html>
