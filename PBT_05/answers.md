@@ -317,3 +317,17 @@ footer {
         padding: 20px;
     }
 }
+```
+
+## PHẦN B — THỰC HÀNH CODE
+### Bài B3 — SCSS Refactor
+**Compile** — Biên dịch SCSS → CSS, ghi lại lệnh compile:
+- Sử dụng công cụ Dart-Sass (hoặc Node-Sass) qua giao diện dòng lệnh Terminal để tiến hành biên dịch mã nguồn
+1. Lệnh biên dịch một lần (Compile):**
+```bash
+sass scss/style.scss responsive.css
+```
+2. Lệnh tự động theo dõi và cập nhật thay đổi (Watch Mode):
+Bash
+sass --watch scss/style.scss:responsive.css
+
