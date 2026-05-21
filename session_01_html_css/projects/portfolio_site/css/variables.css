@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #6366f1;    /* Indigo */
+    --color-secondary: #8b5cf6;  /* Purple */
+    --color-dark: #1e293b;       /* Slate dark */
+    --color-light: #f8fafc;      /* Slate light */
+    --color-text: #334155;       /* Slate text */
+    --font-main: 'Segoe UI', sans-serif;
+}
+.container {
+    max-width: 1100px; /* Giới hạn độ rộng tối đa */
+    margin: 0 auto;    /* Căn giữa toàn bộ khối */
+    padding: 0 20px;   /* Tạo khoảng đệm an toàn 2 bên để không bị dính mép khi thu nhỏ */
+    width: 100%;       /* Đảm bảo co giãn trên mobile */
+}

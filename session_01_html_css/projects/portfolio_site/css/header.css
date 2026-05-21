@@ -1,0 +1,27 @@
+nav a {
+    text-decoration: none; 
+    color: #334155;       
+    font-weight: 600;      
+    margin-left: 2rem;     
+    transition: color 0.3s ease; 
+}
+nav a:hover {
+    color: var(--color-secondary);
+}
+header {
+    position: sticky; top: 0; z-index: 1000;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 5%; background: #ffffff; position: sticky; top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.menu-toggle, .hamburger {
+    display: none; 
+}
+.logo {
+    font-size: 1.2rem;     
+    font-weight: 500;      
+    color: #8b5cf6;        
+    letter-spacing: -0.5px; 
+    text-transform: none; 
+}
