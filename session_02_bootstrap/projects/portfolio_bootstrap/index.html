@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/comments.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/custom-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <!-- Header (Navigation)-->
+    <header>
+        <div class="logo">Huyen Trang</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="#">Huyen Trang</a>
+                <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="min-vh-100 d-flex align-items-center justify-content-center text-center text-white"
+             style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container">
+            <h1 class="display-2 fw-bold mb-3">
+                Hi, I'm <span class="text-warning">Huyen Trang</span>
+            </h1>
+            <p class="lead mb-4 opacity-75">Full-Stack Developer | UI Designer | Problem Solver</p>
+            <a href="#portfolio" class="btn btn-light btn-lg px-5 py-3 fw-semibold">
+                View My Work →
+            </a>
+        </div>
+    </section>
+
+<!-- Portfolio Grid-->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Web</button>
+                <button class="filter-btn">Mobile</button>
+                <button class="filter-btn">Design</button>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img src="img/anh/anh1.jpg" class="card-img-top" alt="E-Commerce Website">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Website</h5>
+                            <p class="card-text text-muted">React + Node.js</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img src="img/anh/anh2.jpg" class="card-img-top" alt="Personal Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Portfolio Website</h5>
+                            <p class="card-text text-muted">HTML5 + CSS3 + Bootstrap 5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img src="img/anh/anh3.jpg" class="card-img-top" alt="Game Entity System">
+                        <div class="card-body">
+                            <h5 class="card-title">Dragon Boy Entity Modeling</h5>
+                            <p class="card-text text-muted">Java + OOP + UML Diagram</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img src="img/anh/anh4.jpg" class="card-img-top" alt="Graph Algorithms">
+                        <div class="card-body">
+                            <h5 class="card-title">Pathfinding Visualizer</h5>
+                            <p class="card-text text-muted">Python + A* Search + Branch and Bound</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img src="img/anh/anh5.jpg" class="card-img-top" alt="ShopHT Management">
+                        <div class="card-body">
+                            <h5 class="card-title">ShopHT Management System</h5>
+                            <p class="card-text text-muted">SQL Server + C# .NET + Architecture Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img src="img/anh/anh6.jpg" class="card-img-top" alt="Task Management App">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Manager REST API</h5>
+                            <p class="card-text text-muted">Node.js + MongoDB + Git/GitHub Workflow</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--About section — Bootstrap Grid:-->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <img src="img/anh/profile.jpg" class="rounded-circle img-fluid" alt="Profile" style="max-width: 250px;">
+                </div>
+                <div class="col-lg-7">
+                    <p class="lead">I'm a passionate Information Systems student, focused on bridging the gap between business needs and technology solutions.</p>
+                    <p>Specialized in Frontend development and Systems Analysis, I love creating intuitive interfaces while ensuring efficient data flows and robust database designs. I am currently expanding my skills in modern UI frameworks, system architecture modeling (UML), and mastering development workflows with Git and GitHub.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Skills section — Bootstrap Progress:-->        
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">My Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-semibold">HTML5</span>
+                            <span class="text-primary fw-semibold">95%</span>
+                        </div>
+                        <div class="progress" style="height: 12px;">
+                            <div class="progress-bar bg-primary" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-semibold">CSS3 & Bootstrap 5</span>
+                            <span class="text-primary fw-semibold">85%</span>
+                        </div>
+                        <div class="progress" style="height: 12px;">
+                            <div class="progress-bar bg-primary" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-semibold">JavaScript</span>
+                            <span class="text-primary fw-semibold">80%</span>
+                        </div>
+                        <div class="progress" style="height: 12px;">
+                            <div class="progress-bar bg-primary" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-semibold">React.js</span>
+                            <span class="text-primary fw-semibold">80%</span>
+                        </div>
+                        <div class="progress" style="height: 12px;">
+                            <div class="progress-bar bg-primary" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!---->
+    <section id="blog" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Main Content (8 columns) -->
+            <div class="col-lg-8">
+                <!-- Blog Post Card 1 -->
+                <article class="card mb-4">
+                    <img src="img/anh/anh1.jpg" class="card-img-top" alt="Information Systems">
+                    <div class="card-body">
+                        <span class="badge bg-primary">Information Systems</span>
+                        <h3 class="card-title mt-2">The Role of Information Systems in Modern Business</h3>
+                        <p class="card-text text-muted">
+                            <small>By Huyen Trang • Jan 15, 2026 • 5 min read</small>
+                        </p>
+                        <p class="card-text">Discover how bridging the gap between business processes and technology can drive digital transformation and optimize data workflow in management systems like ShopHT.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </article>
+
+                <article class="card mb-4">
+                    <img src="img/anh/anh2.jpg" class="card-img-top" alt="UML Modeling">
+                    <div class="card-body">
+                        <span class="badge bg-primary">System Analysis</span>
+                        <h3 class="card-title mt-2">Mastering UML Diagrams: From Use Cases to Class Models</h3>
+                        <p class="card-text text-muted">
+                            <small>By Huyen Trang • May 10, 2026 • 7 min read</small>
+                        </p>
+                        <p class="card-text">A step-by-step guide to modeling system logic. Learn how to draft precise Sequence and Activity diagrams for user registration and gameplay states.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </article>
+
+                <article class="card mb-4">
+                    <img src="img/anh/anh3.jpg" class="card-img-top" alt="Algorithms">
+                    <div class="card-body">
+                        <span class="badge bg-primary">Algorithms</span>
+                        <h3 class="card-title mt-2">Pathfinding: A Practical Guide to A* and Branch & Bound</h3>
+                        <p class="card-text text-muted">
+                            <small>By Huyen Trang • May 01, 2026 • 6 min read</small>
+                        </p>
+                        <p class="card-text">Breaking down complex graph traversal techniques. Understand how search algorithms work behind the scenes to find the most efficient pathways.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </article>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Leave a Comment</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comment" class="form-label">Comment</label>
+                                <textarea class="form-control" id="comment" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="comments-section card p-4 mb-4 shadow-sm">
+                    <h5 class="mb-4">3 Comments</h5>
+                    <!-- Parent Comment -->
+                    <div class="comment mb-4">
+                        <div class="d-flex">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ho_Chi_Minh_City_panorama_2019_%28cropped%29.jpg/250px-Ho_Chi_Minh_City_panorama_2019_%28cropped%29.jpg?utm_source=vi.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" class="rounded-circle me-3" alt="Avatar">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">John Doe</h6>
+                                    <small class="text-muted">2 hours ago</small>
+                                </div>
+                                <p class="mb-2">Great article! Very helpful for beginners.</p>
+                                <button class="btn btn-sm btn-link text-decoration-none">
+                                    <i class="bi bi-reply"></i> Reply
+                                </button>
+                                <!-- Nested Reply -->
+                                <div class="comment reply ms-5 mt-3">
+                                    <div class="d-flex">
+                                        <img src="img/anh/profile.jpg" class="rounded-circle me-3" alt="Avatar">
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h6 class="mb-0">Trang</h6>
+                                                <small class="text-muted">1 hour ago</small>
+                                            </div>
+                                            <p class="mb-2">Thank you! Glad it helped.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comment mb-4">
+                        <div class="d-flex">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSRhG60_0BnlBKhzc74monpO6owKdV2OYg5g&s" class="rounded-circle me-3" alt="Avatar">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">thv</h6>
+                                    <small class="text-muted">2 hours ago</small>
+                                </div>
+                                <p class="mb-2">사랑해요</p>
+                                    <button class="btn btn-sm btn-link text-decoration-none">
+                                        <i class="bi bi-reply"></i> Reply
+                                    </button>
+                                    <div class="comment reply ms-5 mt-3">
+                                    <div class="d-flex">
+                                        <img src="img/anh/profile.jpg" class="rounded-circle me-3" alt="Avatar">
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h6 class="mb-0">Trang</h6>
+                                                <small class="text-muted">1 hour ago</small>
+                                            </div>
+                                            <p class="mb-2">나도</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment mb-4">
+                        <div class="d-flex">
+                            <img src="https://cdn2.tuoitre.vn/zoom/700_525/471584752817336320/2026/2/26/edit-jungkook-1772102794186193260618-14-1-458-849-crop-1772103507331152750316.jpeg" class="rounded-circle me-3" alt="Avatar">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">JK</h6>
+                                    <small class="text-muted">2 hours ago</small>
+                                </div>
+                                <p class="mb-2">Good!</p>
+                                    <button class="btn btn-sm btn-link text-decoration-none">
+                                        <i class="bi bi-reply"></i> Reply
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar (4 columns) -->
+            <div class="col-lg-4">
+                <!-- Sticky sidebar -->
+                <div class="sticky-top pt-4">
+                    <!-- Search -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Search</h5>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for posts...">
+                                <button class="btn btn-primary" type="button">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Categories</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Technology
+                                <span class="badge bg-primary rounded-pill">12</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                                Information Systems
+                                <span class="badge bg-primary rounded-pill">12</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                                System Analysis
+                                <span class="badge bg-primary rounded-pill">8</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                                Algorithms & Graph
+                                <span class="badge bg-primary rounded-pill">5</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Recent Posts -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Recent Posts</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex mb-3">
+                                <img src="img/anh/anh1.jpg" class="rounded" width="60" height="60" alt="Post thumbnail">
+                                <div class="ms-3">
+                                    <h6 class="mb-1">The Role of IS in Modern Business</h6>
+                                        <small class="text-muted">Jan 15, 2026</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tags -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Tags</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">HTML</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                                <span class="badge bg-secondary">UML</span>
+                                <span class="badge bg-secondary">WebDev</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                                <span class="badge bg-secondary">Database</span>
+                                <span class="badge bg-secondary">OOP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section> 
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out. I'm always open to discussing new projects.</p>
+                    <div class="info-item">
+                        <span class="icon">📧</span>
+                        <span>huyen.trang@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <span>Hanoi, Vietnam</span>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Trang</div>
+                    <p class="footer-tagline">Building digital experiences</p>
+                </div>
+                <div class="social-links" style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="#" class="social-link" aria-label="GitHub" style="color: inherit; text-decoration: none;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="LinkedIn" style="color: inherit; text-decoration: none;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+
+                    <a href="mailto:huyen.trang@example.com" class="social-link" aria-label="Email" style="color: inherit; text-decoration: none; font-size: 1.5rem; line-height: 1;">
+                        <span>✉️</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Trang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

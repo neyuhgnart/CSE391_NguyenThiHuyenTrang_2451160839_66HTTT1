@@ -1,0 +1,27 @@
+.btn {
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--bs-primary-hover);
+    border-color: var(--bs-primary-hover);
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.form-control,
+.form-select {
+    border-radius: 10px;
+}
+
+.navbar {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
