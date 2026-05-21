@@ -1,0 +1,250 @@
+/*Mobile*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 14px; 
+    line-height: 1.5;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.hamburger-btn {
+    font-size: 1.6rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.nav-item {
+    padding: 12px 20px;
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background-color: #f1f3f5;
+    color: #0d6efd;
+}
+
+.menu-checkbox:checked ~ .nav-menu {
+    display: flex;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.ads-bar {
+    display: none;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.product-image-container {
+    aspect-ratio: 1 / 1;
+    background-color: #f1f3f5;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #343a40;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.footer {
+    background-color: #212529;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*tablet*/
+@media (min-width: 768px) {
+body {
+    font-size: 15px; 
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 5px 15px;
+}
+
+.sidebar {
+    display: block;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.sidebar-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.filter-dropdown {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+}
+
+/*desktop*/
+@media (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: 260px 1fr 220px;
+        gap: 25px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 25px 20px;
+    }
+
+    .sidebar {
+        display: block;
+        height: fit-content;
+    }
+
+    .filter-dropdown {
+        max-width: 100%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .ads-bar {
+        display: block;
+        height: fit-content;
+        background-color: #fff3cd;
+        border: 1px solid #ffe69c;
+        border-radius: 8px;
+        padding: 20px;
+        color: #664d03;
+    }
+
+    .ads-sticky-content h4 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .ads-sticky-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
