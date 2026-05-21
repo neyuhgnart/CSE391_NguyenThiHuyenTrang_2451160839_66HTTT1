@@ -1,0 +1,22 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--bs-body-font-family); color: var(--slate-700); background-color: var(--slate-50); }
+
+.navbar, header, .sticky-top:not(.col-lg-4 .sticky-top) { 
+    position: sticky;
+    top: 0;
+    background-color: #ffffff !important; 
+    z-index: 1030 !important;
+}
+.sticky-top {
+    position: sticky;
+    top: 90px;
+    z-index: 9;
+}
+
+.py-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.gap-4 { 
+    gap: 2rem; 
+}
