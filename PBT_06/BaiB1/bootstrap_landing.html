@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="#"><i class="bi bi-shop me-2"></i>TechHT</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                </ul>
+                
+                <form class="d-flex me-3" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Tìm sản phẩm..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+                
+                <div class="navbar-nav">
+                    <a class="nav-link position-relative text-white fs-5" href="#">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" style="height: 500px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/119/1920/1080') no-repeat center center/cover;">
+                <div class="carousel-caption d-flex flex-column h-100 justify-content-center align-items-center text-center">
+                    <h1 class="display-4 fw-bold">Siêu Sale Công Nghệ</h1>
+                    <p class="lead">Giảm giá lên đến 50% cho tất cả các dòng Laptop thế hệ mới.</p>
+                    <a href="#" class="btn btn-danger btn-lg px-4">Mua Ngay</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="height: 500px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/160/1920/1080') no-repeat center center/cover;">
+                <div class="carousel-caption d-flex flex-column h-100 justify-content-center align-items-center text-center">
+                    <h1 class="display-4 fw-bold">Phụ Kiện Chính Hãng</h1>
+                    <p class="lead">Nâng tầm trải nghiệm làm việc và giải trí của bạn.</p>
+                    <a href="#" class="btn btn-primary btn-lg px-4">Khám Phá</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="height: 500px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/250/1920/1080') no-repeat center center/cover;">
+                <div class="carousel-caption d-flex flex-column h-100 justify-content-center align-items-center text-center">
+                    <h1 class="display-4 fw-bold">Ưu Đãi Độc Quyền tuần này</h1>
+                    <p class="lead">Freeship toàn quốc cho các đơn hàng từ 500k.</p>
+                    <a href="#" class="btn btn-success btn-lg px-4">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mb-5">
+        <h2 class="text-center fw-bold mb-4">Sản Phẩm Nổi Bật</h2>
+        
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 position-relative shadow-sm">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-danger fs-6 z-1">Sale</span>
+                    <img src="https://picsum.photos/id/1/400/300" class="card-img-top" alt="Sản phẩm 1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Laptop Pro 14 inch</h5>
+                        <p class="card-text text-muted flex-grow-1">Chip M3 mạnh mẽ, RAM 16GB, SSD 512GB cân mọi tác vụ đồ họa nặng.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">29.990.000đ</span>
+                            <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#quickViewModal">Xem nhanh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 position-relative shadow-sm">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-danger fs-6 z-1">Sale</span>
+                    <img src="https://picsum.photos/id/3/400/300" class="card-img-top" alt="Sản phẩm 2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Bàn phím cơ không dây</h5>
+                        <p class="card-text text-muted flex-grow-1">Hỗ trợ hotswap, switch linear gõ êm, đèn LED RGB rực rỡ.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">1.590.000đ</span>
+                            <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#quickViewModal">Xem nhanh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 position-relative shadow-sm">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-danger fs-6 z-1">Sale</span>
+                    <img src="https://picsum.photos/id/48/400/300" class="card-img-top" alt="Sản phẩm 3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Màn hình Gaming 27"</h5>
+                        <p class="card-text text-muted flex-grow-1">Tần số quét 165Hz mượt mà, độ phân giải 2K sắc nét từng chi tiết.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">5.490.000đ</span>
+                            <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#quickViewModal">Xem nhanh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 position-relative shadow-sm">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-danger fs-6 z-1">Sale</span>
+                    <img src="https://picsum.photos/id/8/400/300" class="card-img-top" alt="Sản phẩm 4">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Tai nghe chống ồn</h5>
+                        <p class="card-text text-muted flex-grow-1">Công nghệ chống ồn chủ động ANC, pin trâu lên đến 30 giờ liên tục.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">3.200.000đ</span>
+                            <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#quickViewModal">Xem nhanh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="quickViewModalLabel">Chi tiết sản phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-close="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <img src="https://picsum.photos/id/1/600/450" class="img-fluid rounded" alt="Chi tiết sản phẩm">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="fw-bold">Laptop Pro 14 inch</h3>
+                            <p class="text-danger h4 fw-bold">29.990.000đ</p>
+                            <hr>
+                            <p>Đây là thông tin chi tiết đầy đủ của sản phẩm. Thiết bị sở hữu cấu hình đầu bảng hiện nay cùng chính sách bảo hành chính hãng lên tới 24 tháng, lỗi 1 đổi 1 trong vòng 30 ngày.</p>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Số lượng:</label>
+                                <input type="number" class="form-control w-25" value="1" min="1">
+                            </div>
+                            <button type="button" class="btn btn-dark w-100"><i class="bi bi-cart-plus me-2"></i>Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold text-uppercase mb-3">Về Chúng Tôi</h5>
+                    <p class="text-muted small">TechHT là hệ thống bán lẻ công nghệ uy tín, mang đến sản phẩm chất lượng tốt nhất cho khách hàng toàn quốc.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold text-uppercase mb-3">Hỗ Trợ Khách Hàng</h5>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Chính sách bảo hành</a></li>
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Chính sách đổi trả</a></li>
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Phương thức vận chuyển</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold text-uppercase mb-3">Liên Hệ</h5>
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt me-2"></i> 123 Đường Tây Sơn, Hà Nội</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone me-2"></i> 1900 xxxx (8h - 22h)</p>
+                    <p class="text-muted small"><i class="bi bi-envelope me-2"></i> support@techmart.com</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold text-uppercase mb-3">Đăng ký nhận thông tin mới</h5>
+                    <p class="text-muted small">Nhận ngay thông báo về voucher giảm giá sớm nhất.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-sm" placeholder="Email của bạn">
+                        <button class="btn btn-danger btn-sm" type="button">Gửi</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted small">
+                &copy; 2026 TechMart. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
