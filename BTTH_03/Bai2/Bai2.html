@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Công Việc Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quản Lý Công Việc Cá Nhân</h1>
+        <div class="summary-container" id="task-summary">
+            <div class="summary-card total">Tổng số: <span id="total-tasks">0</span></div>
+            <div class="summary-card completed">Đã hoàn thành: <span id="completed-tasks">0</span></div>
+            <div class="summary-card pending">Chưa hoàn thành: <span id="pending-tasks">0</span></div>
+        </div>
+
+        <div id="toast-message" class="toast hidden"></div>
+
+        <div class="action-bar">
+            <button id="btn-open-form" class="btn btn-primary">Thêm công việc</button>
+        </div>
+
+        <div class="task-section">
+            <div id="empty-state" class="empty-state">Chưa có công việc nào. Hãy thêm công việc mới!</div>
+            <div id="task-list" class="task-list"></div>
+        </div>
+    </div>
+
+    <div id="form-popup" class="popup-overlay hidden">
+        <div class="popup-content">
+            <h2 id="form-title">Thêm công việc mới</h2>
+            <form id="task-form">
+                <input type="hidden" id="task-id">
+
+                <div class="form-group">
+                    <label for="task-title">Tiêu đề công việc *</label>
+                    <input type="text" id="task-title" required placeholder="Nhập tiêu đề...">
+                </div>
+
+                <div class="form-group">
+                    <label for="task-desc">Mô tả ngắn</label>
+                    <textarea id="task-desc" rows="3" placeholder="Nhập mô tả ngắn..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-deadline">Hạn hoàn thành</label>
+                    <input type="date" id="task-deadline">
+                </div>
+
+                <div class="form-group">
+                    <label for="task-priority">Mức ưu tiên</label>
+                    <select id="task-priority">
+                        <option value="Thấp">Thấp</option>
+                        <option value="Trung bình" selected>Trung bình</option>
+                        <option value="Cao">Cao</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-status">Trạng thái hoàn thành</label>
+                    <select id="task-status">
+                        <option value="false" selected>Chưa hoàn thành</option>
+                        <option value="true">Đã hoàn thành</option>
+                    </select>
+                </div>
+
+                <div class="popup-actions">
+                    <button type="button" id="btn-close-form" class="btn btn-secondary">Đóng</button>
+                    <button type="submit" id="btn-submit-form" class="btn btn-success">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
