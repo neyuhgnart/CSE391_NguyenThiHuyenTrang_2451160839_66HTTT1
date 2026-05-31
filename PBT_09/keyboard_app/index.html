@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Bộ Điều Khiển Phím Tắt</h1>
+        <p class="guide-text">Mẹo phím tắt: Bấm <kbd>Ctrl</kbd> + <kbd>K</kbd> để mở thanh lệnh; Bấm <kbd>←</kbd> <kbd>→</kbd> hoặc <kbd>1</kbd>-<kbd>4</kbd> để duyệt ảnh; Bấm <kbd>Space</kbd> để chạy tự động.</p>
+    </header>
+
+    <main class="app-container">
+        <section class="gallery-section" aria-label="Bộ sưu tập hình ảnh tương tác">
+            <div id="galleryViewer" class="gallery-viewer" tabindex="0" aria-label="Khung hiển thị ảnh lớn. Sử dụng mũi tên để chuyển ảnh, Space để tự động trình chiếu.">
+                <img id="mainImage" src="" alt="Ảnh đang được tải">
+                <div id="slideshowStatus" class="slideshow-status" aria-live="polite">Slideshow: Đang Dừng</div>
+            </div>
+
+            <div id="thumbnailList" class="thumbnail-list" role="listbox" aria-label="Danh sách ảnh thu nhỏ">
+                </div>
+        </section>
+    </main>
+
+    <div id="commandPalette" class="palette-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Thanh lệnh tìm kiếm nhanh">
+        <div class="palette-content">
+            <div class="palette-header">
+                <input type="text" id="paletteInput" placeholder="Gõ từ khóa để tìm lệnh... (Ví dụ: xem, bat, tat)" aria-label="Nhập lệnh tìm kiếm, sử dụng phím mũi tên lên xuống để di chuyển và Enter để chọn">
+            </div>
+            <ul id="commandList" class="command-list" role="listbox" aria-label="Kết quả tìm kiếm lệnh">
+                </ul>
+            <div class="palette-footer">
+                <span>Di chuyển: <kbd>↑</kbd> <kbd>↓</kbd></span>
+                <span>Chọn: <kbd>Enter</kbd></span>
+                <span>Đóng: <kbd>Esc</kbd></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Chế độ xem ảnh toàn màn hình">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="close-modal-btn" aria-label="Đóng chế độ xem ảnh toàn màn hình">×</button>
+            <img id="modalImage" src="" alt="Ảnh phóng to chi tiết">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
