@@ -1,4 +1,5 @@
 ## 📝 Bài 0.1 — Chạy React đầu tiên (5 phút)
+
 1. File `.jsx` khác gì file `.js`?
 .js (JavaScript): Chứa mã logic JavaScript tiêu chuẩn. Trình duyệt có thể đọc và hiểu trực tiếp file này.
 .jsx (JavaScript XML): Là một phần mở rộng cú pháp của JavaScript do React phát triển. Nó cho phép bạn viết các thẻ giống HTML nằm ngay trong code JavaScript mà không cần dùng chuỗi văn bản hay các hàm tạo phần tử phức tạp. Trình duyệt không tự hiểu được .jsx; công cụ build (như Vite) sẽ tự động biên dịch nó thành mã JS tiêu chuẩn trước khi chạy.
